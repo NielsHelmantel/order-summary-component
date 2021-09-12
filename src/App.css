@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .wrapper {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+    margin: 0 50px;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+}
